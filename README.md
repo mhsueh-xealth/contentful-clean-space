@@ -23,7 +23,7 @@ Options:
       --accesstoken    Contentful access token               [string] [required]
       --batch-size     Number of parallel contentful requests
                                                            [number] [default: 5]
-      --content-types  Delete content types as well   [boolean] [default: false]
+      --delete-content-types  Delete content types as well   [boolean] [default: false]
       --assets         Delete assets as well          [boolean] [default: false]
   -y, --yes            Auto-confirm delete prompt     [boolean] [default: false]
   -v, --verbose                                       [boolean] [default: false]
@@ -33,4 +33,4 @@ All parameters can be provided from environment variables, too. To do that, just
 
 ## Example Usage
 
-To delete all entries, content types, as well as assets in the "master" environment, and without the safety prompt, use `contentful-clean-space --space-id [space id] --accesstoken [personal access token] --content-types=true --assets=true --env master --yes=true`
+To delete all entries, content types, as well as assets in the "master" environment, and without the safety prompt, use `contentful-clean-space --space-id [space id] --accesstoken [personal access token] --delete-content-types=true --assets=true --env master --yes=true`
