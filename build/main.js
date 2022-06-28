@@ -236,5 +236,4 @@ async function deleteAssets(contentfulSpace, batchSize, verbose, environment) {
         await Promise.all(promises);
     } while (totalAssets > batchSize);
 }
-main();
 //# sourceMappingURL=main.js.map

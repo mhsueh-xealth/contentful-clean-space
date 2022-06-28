@@ -305,5 +305,3 @@ async function deleteAssets(
     await Promise.all(promises);
   } while (totalAssets > batchSize);
 }
-
-main()
